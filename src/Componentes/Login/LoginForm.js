@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './LoginForm.module.css';
 import stylesbtn from '../forms/Button.module.css';
@@ -6,7 +6,7 @@ import useForm from '../../Hooks/useForm';
 import UserContext from '../../UserContext';
 import Button from '../forms/Button';
 import Input from '../forms/Input';
-import Error from '../Error';
+import Error from '../Helper/Error';
 
 const LoginForm = () => {
   const username = useForm();
