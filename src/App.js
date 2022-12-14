@@ -7,7 +7,7 @@ import Login from './Componentes/Login/Login';
 import './App.css';
 import { UserStorage } from './UserContext';
 import ProtectedRoute from './Componentes/Helper/ProtectedRoute';
-import User from './Componentes/User';
+import User from './Componentes/User/User';
 
 const App = () => {
   return (
