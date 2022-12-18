@@ -20,6 +20,7 @@ const useFetch = () => {
     } finally {
       setLoading(false);
       setData(json);
+      return { response, json };
     }
   }, []);
   return {

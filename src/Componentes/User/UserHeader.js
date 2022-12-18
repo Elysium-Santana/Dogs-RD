@@ -5,7 +5,7 @@ import styles from './UserHeader.module.css';
 import UserHeaderNav from './UserHeaderNav';
 
 const UserHeader = () => {
-  const [title, setTitle] = React.useState(null);
+  const [title, setTitle] = React.useState('null');
   const location = useLocation();
   React.useEffect(() => {
     const { pathname } = location;
