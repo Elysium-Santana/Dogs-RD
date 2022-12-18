@@ -10,11 +10,12 @@ import { useNavigate } from 'react-router-dom';
 
 const UserPhotoPost = () => {
   const nome = useForm();
-  const idade = useForm('number');
   const peso = useForm('number');
+  const idade = useForm('number');
   const [img, setImg] = React.useState({});
-  const { request, loading, error, data } = useFetch();
+  const { data, error, loading, request } = useFetch();
   const navigate = useNavigate();
+
   React.useEffect(() => {
     if (data) navigate('/conta');
   }, [data, navigate]);
@@ -24,19 +25,21 @@ const UserPhotoPost = () => {
     const formData = new FormData();
     formData.append('img', img.raw);
     formData.append('nome', nome.value);
-    formData.append('idade', idade.value);
     formData.append('peso', peso.value);
+    formData.append('idade', idade.value);
 
     const token = window.localStorage.getItem('token');
     const { url, options } = PHOTO_POST(formData, token);
     request(url, options);
   }
-  function handleImageChange({ target }) {
+
+  function handleImgChange({ target }) {
     setImg({
       preview: URL.createObjectURL(target.files[0]),
       raw: target.files[0],
     });
   }
+
   return (
     <section className={`${styles.photoPost} animeLeft`}>
       <form onSubmit={handleSubmit}>
@@ -48,10 +51,10 @@ const UserPhotoPost = () => {
           type="file"
           name="img"
           id="img"
-          onChange={handleImageChange}
+          onChange={handleImgChange}
         />
         {loading ? (
-          <Button disabled>Carregando...</Button>
+          <Button disabled>Enviando...</Button>
         ) : (
           <Button>Enviar</Button>
         )}

@@ -37,6 +37,9 @@ button , input{
   padding:  0 1rem;
   margin:  o auto;
 }
+.mainConteiner{
+  margin-top: 4rem;
+}
 a{
 text-decoration: none;
 color: #333;
