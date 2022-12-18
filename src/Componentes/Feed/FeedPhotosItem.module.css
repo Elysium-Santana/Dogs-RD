@@ -35,7 +35,7 @@
   display: inline-block;   
   width:16px ;
   height: 10px;
-  margin-bottom: .25rem;
-  background:url('../../Assets/visualizacao.svg')no-repeat ;
+  margin: 0 .15rem .05rem 0;
+  background:url('../../Assets/visualizacao.svg')no-repeat center;  
 }
 
