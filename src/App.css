@@ -3,7 +3,7 @@
   box-sizing: border-box;  
 }
 body{
-  margin: 0;
+  margin: 0 ;
   color:#333;
   --type-first: Helvetica, Arial , sans-serif;
   --type-second: 'Spectral', georgia;
@@ -37,10 +37,10 @@ button , input{
 .conteiner{
   max-width: 50rem;
   padding:  0 1rem;
-  margin:  o auto;
+  margin:  0 auto;
 }
 .mainConteiner{
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 a{
 text-decoration: none;
