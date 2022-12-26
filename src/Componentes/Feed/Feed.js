@@ -33,7 +33,7 @@ const Feed = ({ user }) => {
   return (
     <div>
       {modalPhoto && (
-        <FeedModal foto={modalPhoto} setModalPhoto={setModalPhoto} />
+        <FeedModal photo={modalPhoto} setModalPhoto={setModalPhoto} />
       )}
       {pages.map((page) => (
         <FeedPhotos
