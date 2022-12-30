@@ -85,3 +85,7 @@ color: #333;
 .AppBody{
   flex: 1;
 }
+
+.victoryConteiner{
+  height: initial !important;
+}
