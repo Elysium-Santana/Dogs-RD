@@ -14,10 +14,11 @@ const UserStatsGraphs = ({ data }) => {
       };
     });
 
+    const isEmpty = data.every(({ acessos }) => +acessos === 0);
     setTotal(
-      data
-        .map(({ acessos }) => +acessos)
-        .reduce((a, b) => (a > 0 ? a + b : '')),
+      isEmpty
+        ? 'Não há nenhuma foto para acessar.'
+        : data.map(({ acessos }) => +acessos).reduce((a, b) => a + b),
     );
     setGraph(graphData);
   }, [data]);
