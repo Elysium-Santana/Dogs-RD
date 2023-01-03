@@ -15,7 +15,11 @@ const Header = () => {
           <Dogs />
         </Link>
         {data ? (
-          <Link to="/conta" className={styles.login}>
+          <Link
+            to="/conta"
+            className={styles.login}
+            style={{ textTransform: 'capitalize' }}
+          >
             {data.nome}
           </Link>
         ) : (
