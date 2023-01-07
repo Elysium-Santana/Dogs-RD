@@ -27,5 +27,3 @@ Logado, é possivel visualizar, comentar, postar mais fotos e acompanhar as esta
 <img src='./src/Assets/readme_gif3.gif'/>
 
 ---
-
-# Bug do projeto original
