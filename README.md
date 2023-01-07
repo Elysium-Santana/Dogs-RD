@@ -15,5 +15,13 @@ O projeto possui um feed de fotos que carrega mais imagens enquanto o usuário a
 
 # Login
 
-Este projeto conta com formulários de autenticação e criação de novo usuário, que validam os campos de entrada para garantir que os dados inseridos pelo usuário são válidos. Além disso, incluímos uma funcionalidade para o caso de perda da senha, permitindo que o usuário solicite a redefinição da senha fornecendo o endereço de e-mail associado à sua conta
+Este projeto conta com formulários de autenticação e criação de novo usuário, que validam os campos de entrada para garantir que os dados inseridos pelo usuário são válidos. Além disso, caso perca a senha, é permitido que o usuário solicite a redefinição da senha fornecendo o endereço de e-mail associado à sua conta
 <img src='./src/Assets/readme_gif4.gif'/>
+
+---
+
+# Interações do usuário
+
+Logado, é possivel visualizar, comentar, postar mais fotos e acompanhar as estatísticas de acessos.
+<img src='./src/Assets/readme_gif2.gif'/>
+<img src='./src/Assets/readme_gif3.gif'/>
